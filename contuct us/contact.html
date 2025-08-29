@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>اتصل بنا</title>
+    <link rel="stylesheet" href="/Global CSS/global style.css" />
+    <link rel="stylesheet" href="/contuct us/assits/css/contuct.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <!-- <div class="logo">InnoSphere AI</div>1 -->
+      <img src="/Global CSS/logo.png" alt="logo" style="width: 150px" />
+      <input type="checkbox" id="menu-toggle" />
+      <label for="menu-toggle" class="menu-icon">&#9776;</label>
+      <ul class="nav-links">
+        <li><a href="/home page/homePage.html">Home</a></li>
+        <li><a href="/services page/servise.html">Services</a></li>
+        <li><a href="/team page/team.html">Team</a></li>
+        <li><a href="/contuct us/contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- --------------------------------------------------------------------------- -->
+
+    <!-- ------------------contuct section----------------------- -->
+    <section class="contact-section">
+      <h1>تواصل معنا</h1>
+      <div class="contact-container">
+        <!-- نموذج التواصل -->
+        <form action="#" method="post" class="contact-form">
+          <fieldset>
+            <legend>معلوماتك الشخصية</legend>
+
+            <!-- الاسم الكامل -->
+            <label for="fullname">الاسم الكامل:</label>
+            <input type="text" id="fullname" name="fullname" required />
+
+            <!-- البريد الإلكتروني -->
+            <label for="email">البريد الإلكتروني:</label>
+            <input type="email" id="email" name="email" required />
+
+            <!-- رقم الهاتف -->
+            <label for="phone">رقم الهاتف:</label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              pattern="[0-9]{10}"
+              placeholder="مثال: 0912345678"
+            />
+
+            <!-- اختيار المدينة -->
+            <label for="city">المدينة:</label>
+            <select id="city" name="city">
+              <option value="damascus">دمشق</option>
+              <option value="aleppo">حلب</option>
+              <option value="homs">حمص</option>
+              <option value="latakia">اللاذقية</option>
+            </select>
+
+            <!-- اختيار الجنس -->
+            <p>الجنس:</p>
+            <label
+              ><input type="radio" name="gender" value="male" checked />
+              ذكر</label
+            >
+            <label
+              ><input type="radio" name="gender" value="female" /> أنثى</label
+            >
+
+            <!-- الموافقة على الشروط -->
+            <label class="terms">
+              <input type="checkbox" name="terms" required /> أوافق على الشروط
+              والأحكام
+            </label>
+
+            <!-- الأزرار -->
+            <div class="buttons">
+              <button type="submit">إرسال</button>
+              <button type="reset">إعادة تعيين</button>
+            </div>
+          </fieldset>
+        </form>
+
+        <!-- خريطة وروابط -->
+        <div class="contact-info">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d44805.75886606104!2d-122.49410508682979!3d45.42224533833077!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54959c6de4e76837%3A0x93db4f95f1c80089!2sDamascus%2C%20OR!5e0!3m2!1sen!2sus!4v1756493226609!5m2!1sen!2sus"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- -------------------------------------------------------------------------- -->
+
+    <!-- ------------------------footer----------------------------- -->
+    <footer class="footer">
+      <div class="footer-container">
+        <img src="/Global CSS/logo.png" alt="logo" style="width: 150px" />
+
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="team.html">Team</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+        <div class="footer-social">
+          <a href="https://facebook.com" target="_blank">Facebook</a>
+          <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+          <a href="https://twitter.com" target="_blank">Twitter</a>
+        </div>
+      </div>
+      <p class="footer-copy">&copy; 2025 MobiSphere . All rights reserved.</p>
+    </footer>
+  </body>
+</html>
