@@ -4,30 +4,40 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Our Services</title>
-    <link rel="stylesheet" href="/Global CSS/global style.css" />
-    <link rel="stylesheet" href="/services page/assits/css/services.css" />
+    <link
+      rel="stylesheet"
+      href="/Company-project/Global CSS/global style.css"
+    />
+    <link
+      rel="stylesheet"
+      href="/Company-project/services page/assits/css/services.css"
+    />
   </head>
   <body class="services-page">
+    
     <nav class="navbar">
-      <!-- <div class="logo">InnoSphere AI</div>1 -->
-      <img src="/Global CSS/logo.png" alt="logo" style="width: 150px" />
+      <img
+        src="/Company-project/Global CSS/logo.png"
+        alt="logo"
+        style="width: 150px"
+      />
       <input type="checkbox" id="menu-toggle" />
       <label for="menu-toggle" class="menu-icon">&#9776;</label>
       <ul class="nav-links">
-        <li><a href="/home page/homePage.html">Home</a></li>
-        <li><a href="/services page/servise.html">Services</a></li>
-        <li><a href="/team page/team.html">Team</a></li>
-        <li><a href="/contuct us/contact.html">Contact</a></li>
+        <li><a href="/Company-project/home page/homePage.html">Home</a></li>
+        <li><a href="#services-id">Services</a></li>
+        <li><a href="/Company-project/team page/team.html">Team</a></li>
+        <li><a href="/Company-project/contuct us/contact.html">Contact</a></li>
       </ul>
     </nav>
 
     <!-- --------------------------------------------------------------------------- -->
 
     <main>
-      <section class="services-section">
+      <section class="services-section" id="services-id">
         <h1>Our Services</h1>
 
-        <!-- جدول الخدمات -->
+        <!-- services table -->
         <table class="services-table">
           <thead>
             <tr>
@@ -63,7 +73,6 @@
           </tbody>
         </table>
 
-        <!-- قائمة وصفية للمميزات -->
         <section class="features-list">
           <h2>Key Features</h2>
           <dl>
@@ -78,34 +87,75 @@
           </dl>
         </section>
 
-        <!-- فيديو ترويجي -->
-        <section class="promo-video">
-          <h2>Watch Our Work</h2>
-          <video controls poster="images/video-cover.jpg" width="600">
-            <source src="videos/demo.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
-        </section>
-      </section>
-    </main>
+        <!-- ----------------------- promo-video ---------------------- -->
+       <section class="promo-video">
+  <h2>Watch <span class="highlight">Our</span> Work</h2>
+  <div class="video-container">
+  
+    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/3XcrZ4WHXVE?si=boOEzgeyUaVkUonh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </div>
+</section>
 
+      
+      <!-- -------------------------------------------------------------------------- -->
+
+    <!-- feed back -->
+    <section class="feedback-section">
+      <h2>Customer opinions</h2>
+      <div class="feedback-cards">
+        <div class="feedback-card">
+          <div class="feedback-image">
+            <img src="/Company-project/services page/assits/image/feed back/Client 1.png" alt="Client 1" />
+          </div>
+          <p>
+            "It was a pleasure working with you. The service you provided was beyond amazing!"
+          </p>
+          <h4>James Smith - Marketing Manager</h4>
+        </div>
+        <div class="feedback-card">
+          <div class="feedback-image">
+            <img src="/Company-project/services page/assits/image/feed back/Client 2.png" alt="Client 2" />
+          </div>
+          <p>
+            "The application you provided us was very effective in improving our workflow. Thank you very much!"
+          </p>
+          <h4>Li Wei - Graphic Designer</h4>
+        </div>
+        <div class="feedback-card">
+          <div class="feedback-image">
+            <img src="/Company-project/services page/assits/image/feed back/Client 3.png" alt="Client 3" />
+          </div>
+          <p>
+            "Best experience! I needed quick solutions, and that's exactly what you delivered!"
+          </p>
+          <h4>Marco Rossi - Software Developer</h4>
+        </div>
+      </div>
+    </section>
+  </main>
     <!-- -------------------------------------------------------------------------- -->
 
     <!-- ------------------------footer -->
     <footer class="footer">
       <div class="footer-container">
-        <img src="/Global CSS/logo.png" alt="logo" style="width: 150px" />
+        <img
+          src="/Company-project/Global CSS/logo.png"
+          alt="logo"
+          style="width: 150px"
+        />
 
         <ul class="footer-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="team.html">Team</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="/Company-project/home page/homePage.html">Home</a></li>
+          <li><a href="#services-id">Services</a></li>
+          <li><a href="/Company-project/team page/team.html">Team</a></li>
+          <li>
+            <a href="/Company-project/contuct us/contact.html">Contact</a>
+          </li>
         </ul>
 
         <div class="footer-social">
           <a href="https://facebook.com" target="_blank">Facebook</a>
-          <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+          <a href="https://linkedin.com" target="_parent">LinkedIn</a>
           <a href="https://twitter.com" target="_blank">Twitter</a>
         </div>
       </div>

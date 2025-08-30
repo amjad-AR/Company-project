@@ -1,3 +1,10 @@
+nav ul li:nth-child(2) a{
+  border-bottom: 2px white solid;
+}
+
+/* -------------------------------------------------------------------------- */
+
+/* -------------- services-section ------------------------------------------ */
 .services-section {
   padding: 40px 20px;
   max-width: 1000px;
@@ -28,7 +35,9 @@
   color: #fff;
 }
 
-/* إضافة Scroll للجدول على الشاشات الصغيرة */
+/* -------------------------------------------------------------------------- */
+
+/* --------------------- table-wrapper -------------------------------------- */
 .table-wrapper {
   width: 100%;
   overflow-x: auto;
@@ -54,17 +63,34 @@
   margin: 0 0 10px 20px;
 }
 
-.promo-video {
-  text-align: center;
-  margin-top: 40px;
+/* -------------------------------------------------------------------------- */
+
+/* -------------------promo video ------------------------------------------- */
+.promo-video{
+  justify-self: center;
+  margin-top: 20px;
 }
 
 .promo-video h2 {
-  margin-bottom: 20px;
-  color: var(--blue-100);
+  align-items: center;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 24px;
+  color: var(--blue-10);
 }
 
-/* ميديا كويري للشاشات الصغيرة */
+.promo-video .highlight {
+  color: #34d399; 
+}
+
+.video-container {
+  position: relative;
+  max-width: 100%;
+  display: block;
+  justify-self: center;
+  overflow: hidden;
+}
+
 @media (max-width: 768px) {
   .services-section {
     padding: 20px 10px;
@@ -79,5 +105,85 @@
   .promo-video video {
     width: 100%;
     height: auto;
+  }
+}
+
+
+/* -------------------------------------------------------------------------- */
+
+/* ----------------- feed back ---------------------------------------------- */
+.feedback-section {
+  margin-top: 10px;
+  justify-self: start;
+  padding: 50px 20px;
+  text-align: center;
+  background-color: var(--gray);
+  border-radius: 10px;
+}
+
+.feedback-section h2 {
+  margin-bottom: 40px;
+  color: var(--blue-100);
+}
+
+.feedback-cards {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.feedback-card {
+  width: 30%;
+  height: auto;
+  background: var(--white);
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.feedback-card:hover {
+  transform: translateY(-8px);
+}
+
+.feedback-image {
+  margin-bottom: 20px;
+  max-width: 70%;
+  justify-self: center;
+}
+
+.feedback-image img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.feedback-card p {
+  font-style: italic;
+  color: #333;
+}
+
+.feedback-card h4 {
+  margin-top: 10px;
+  color: var(--green-100);
+}
+
+@media (max-width: 768px) {
+  .feedback-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .feedback-card {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+
+  .promo-video video {
+    width: 100%;
   }
 }

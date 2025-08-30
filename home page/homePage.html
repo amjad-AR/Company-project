@@ -4,27 +4,39 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="/Global CSS/global style.css" />
-    <link rel="stylesheet" href="/home page/assits/css/home.css" />
+    <link
+      rel="stylesheet"
+      href="/Company-project/Global CSS/global style.css"
+    />
+    <link
+      rel="stylesheet"
+      href="/Company-project/home page/assits/css/home.css"
+    />
+  
   </head>
   <body>
+
+    <!-- ---------- navbar ---------------------------- -->
     <nav class="navbar">
-      <!-- <div class="logo">InnoSphere AI</div>1 -->
-      <img src="/Global CSS/logo.png" alt="logo" style="width: 150px" />
+      <img
+        src="/Company-project/Global CSS/logo.png"
+        alt="logo"
+        style="width: 150px"
+      />
       <input type="checkbox" id="menu-toggle" />
       <label for="menu-toggle" class="menu-icon">&#9776;</label>
       <ul class="nav-links">
-        <li><a href="/home page/homePage.html">Home</a></li>
-        <li><a href="/services page/servise.html">Services</a></li>
-        <li><a href="/team page/team.html">Team</a></li>
-        <li><a href="/contuct us/contact.html">Contact</a></li>
+        <li><a href="#home-id">Home</a></li>
+        <li><a href="/Company-project/services page/servise.html">Services</a></li>
+        <li><a href="/Company-project/team page/team.html">Team</a></li>
+        <li><a href="/Company-project/contuct us/contact.html">Contact</a></li>
       </ul>
     </nav>
 
     <!-- --------------------------------------------------------------------------- -->
 
     <!-- ---------------hero-------------------------------------------------------- -->
-    <section class="hero">
+    <section class="hero" id="home-id">
       <div class="hero-content">
         <h1>Empowering Your Startup Journey 🚀</h1>
         <p>
@@ -36,7 +48,7 @@
 
       <div class="hero-image">
         <img
-          src="/home page/assits/image/hero-img.png"
+          src="/Company-project/home page/assits/image/hero-img.png"
           alt="Startup illustration"
           title="Startup Growth"
         />
@@ -86,6 +98,12 @@
               <strong>Flutter, React Native, Kotlin, Swift</strong>.
             </li>
           </ul>
+        </div>
+        <div class="hero-image">
+          <img
+            src="/Company-project/home page/assits/image/why-us.png"
+            alt="image"
+          />
         </div>
       </div>
     </section>
@@ -151,47 +169,55 @@
     <!-- ---------- portfolio-section ---------------------------------------------------------------- -->
     <section class="portfolio-section">
       <h2 class="section-title">Our <span class="highlight">Projects</span></h2>
-      <!-- الكارد الأولى -->
+      <!--  card 1 -->
       <div class="card">
         <div class="card-image">
-          <!-- هون ضيف صورتك -->
           <img
-            src="/home page/assits/image/projects/picture 1.jfif"
-            alt="مشروع 1"
+            src="/Company-project/home page/assits/image/projects/picture 1.jfif"
+            alt="image"
           />
         </div>
         <div class="card-content">
-          <h1>اسم المشروع الأول</h1>
-          <p>شرح سريع عن التطبيق بسطر واحد.</p>
+          <h3>BuySphere</h3>
+          <p>Online store application</p>
         </div>
+        <a href="services.html" class="btn-primary" style="margin-right: 10px"
+          >Details</a
+        >
       </div>
 
-      <!-- الكارد الثانية -->
+      <!--  card 2 -->
       <div class="card">
         <div class="card-image">
           <img
-            src="/home page/assits/image/projects/picture 2.jfif"
-            alt="مشروع 2"
+            src="/Company-project/home page/assits/image/projects/picture 2.jfif"
+            alt="image"
           />
         </div>
         <div class="card-content">
-          <h1>اسم المشروع الثاني</h1>
-          <p>شرح سريع عن التطبيق بسطر واحد.</p>
+          <h3>biPay</h3>
+          <p>Electronic wallet</p>
         </div>
+        <a href="services.html" class="btn-primary" style="margin-right: 10px"
+          >Details</a
+        >
       </div>
 
-      <!-- الكارد الثالثة -->
+      <!-- acrd 3 -->
       <div class="card">
         <div class="card-image">
           <img
-            src="/home page/assits/image/projects/picture 3.jfif"
-            alt="مشروع 3"
+            src="/Company-project/home page/assits/image/projects/picture 3.jfif"
+            alt="image"
           />
         </div>
         <div class="card-content">
-          <h1>اسم المشروع الثالث</h1>
-          <p>شرح سريع عن التطبيق بسطر واحد.</p>
+          <h3>HomeWorkOut</h3>
+          <p>Home exercises for both gender</p>
         </div>
+        <a href="services.html" class="btn-primary" style="margin-right: 10px"
+          >Details</a
+        >
       </div>
     </section>
 
@@ -200,15 +226,13 @@
     <!-- ----------- tech-stack ------------------------------------------- -->
     <section class="tech-stack">
       <h2 class="section-title">Tech-<span class="highlight">Stack</span></h2>
-      <h3>
-        Technologies used in mobile application development
-      </h3>
+      <h3>Technologies used in mobile application development</h3>
       <div class="tech-grid">
         <!-- Native Android -->
         <div class="tech-card">
           <div class="tech-img">
             <img
-              src="/home page/assits/image/tech-stack/Kotlin vs Java.jfif"
+              src="/Company-project/home page/assits/image/tech-stack/Kotlin vs Java.jfif"
               alt="Android Native"
             />
           </div>
@@ -220,7 +244,7 @@
         <div class="tech-card">
           <div class="tech-img">
             <img
-              src="/home page/assits/image/tech-stack/Swift vs Objective-C.jfif"
+              src="/Company-project/home page/assits/image/tech-stack/Swift vs Objective-C.jfif"
               alt="iOS Native"
             />
           </div>
@@ -232,7 +256,7 @@
         <div class="tech-card">
           <div class="tech-img">
             <img
-              src="/home page/assits/image/tech-stack/flutter(dart).jfif"
+              src="/Company-project/home page/assits/image/tech-stack/flutter(dart).jfif"
               alt="Flutter"
             />
           </div>
@@ -244,7 +268,7 @@
         <div class="tech-card">
           <div class="tech-img">
             <img
-              src="/home page/assits/image/tech-stack/React Native.jfif"
+              src="/Company-project/home page/assits/image/tech-stack/React Native.jfif"
               alt="React Native"
             />
           </div>
@@ -256,7 +280,7 @@
         <div class="tech-card">
           <div class="tech-img">
             <img
-              src="/home page/assits/image/tech-stack/Xamarin.jfif"
+              src="/Company-project/home page/assits/image/tech-stack/Xamarin.jfif"
               alt="Xamarin"
             />
           </div>
@@ -268,7 +292,7 @@
         <div class="tech-card">
           <div class="tech-img">
             <img
-              src="/home page/assits/image/tech-stack/Ionic  Capacitor.jfif"
+              src="/Company-project/home page/assits/image/tech-stack/Ionic  Capacitor.jfif"
               alt="Ionic"
             />
           </div>
@@ -280,7 +304,7 @@
         <div class="tech-card">
           <div class="tech-img">
             <img
-              src="/home page/assits/image/tech-stack/Back-End APIs.jfif"
+              src="/Company-project/home page/assits/image/tech-stack/Back-End APIs.jfif"
               alt="Back-End"
             />
           </div>
@@ -309,18 +333,22 @@
     <!-- --------------footer------------------------------------------------------- -->
     <footer class="footer">
       <div class="footer-container">
-        <img src="/Global CSS/logo.png" alt="logo" style="width: 150px" />
+        <img
+          src="/Company-project/Global CSS/logo.png"
+          alt="logo"
+          style="width: 150px"
+        />
 
         <ul class="footer-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="team.html">Team</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="#home-id">Home</a></li>
+          <li><a href="/Company-project/services page/servise.html">Services</a></li>
+          <li><a href="/Company-project/team page/team.html">Team</a></li>
+          <li><a href="/Company-project/contuct us/contact.html">Contact</a></li>
         </ul>
 
         <div class="footer-social">
           <a href="https://facebook.com" target="_blank">Facebook</a>
-          <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+          <a href="https://linkedin.com" target="_parent">LinkedIn</a>
           <a href="https://twitter.com" target="_blank">Twitter</a>
         </div>
       </div>

@@ -1,3 +1,7 @@
+nav ul li:nth-child(3) a{
+  border-bottom: 2px white solid;
+}
+
 .team-section {
   padding: 50px 20px;
   max-width: 1100px;
@@ -12,7 +16,7 @@
 
 .team-cards {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   gap: 30px;
   flex-wrap: wrap;
 }
@@ -48,12 +52,25 @@
   color: #333;
 }
 
-/* Vision Section */
+/* -------------------------- Vision Section -------------------------------- */
 .vision-section {
-  background: var(--blue-10);
+  background: url('/Company-project/team page/assits/image/cta-bg.jfif') center/cover no-repeat; 
   padding: 50px 20px;
   text-align: center;
   color: #fff;
+  position: relative;
+  z-index: -1;
+  height: 400px;
+}
+
+.vision-section::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(130, 161, 210, 0.6); 
+  backdrop-filter: blur(4px);
+  z-index: -1;
 }
 
 .vision-section blockquote {
@@ -62,12 +79,14 @@
   max-width: 800px;
   margin: auto;
   line-height: 1.6;
+  z-index: 20;
 }
 
 .vision-section cite {
   display: block;
   margin-top: 15px;
   font-weight: bold;
+  z-index: 3;
 }
 
 /* Responsive */
@@ -80,4 +99,33 @@
     font-size: 16px;
     padding: 0 10px;
   }
+}
+
+
+.icon{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color:var(--blue-10);
+    transform: translateY(100%);
+    border-radius: 10px;
+    transition: all 0.3s;
+}
+
+.team-card:hover .icon{
+      transform: translateY(0%);
+}
+
+.icon i{
+  font-size: 30px;
+  color: aliceblue;
+  border-radius: 50%;
+}
+
+.icon i:hover{
+  color: var(--blue-100);
+  background-color: aliceblue;
 }
