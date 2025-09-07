@@ -54,7 +54,7 @@ nav ul li:nth-child(3) a{
 
 /* -------------------------- Vision Section -------------------------------- */
 .vision-section {
-  background: url('/Company-project/team page/assits/image/cta-bg.jfif') center/cover no-repeat; 
+  background: url('/team page/assits/image/cta-bg.jfif') center/cover no-repeat; 
   padding: 50px 20px;
   text-align: center;
   color: #fff;
@@ -126,6 +126,5 @@ nav ul li:nth-child(3) a{
 }
 
 .icon i:hover{
-  color: var(--blue-100);
-  background-color: aliceblue;
+  color: var(--blue-200);
 }
